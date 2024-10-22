@@ -1,0 +1,255 @@
+/* Estilos generales del formulario */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #1e3a8a, #000000, #00bcd4, #87ceeb); /* Degradado de azul oscuro a celeste */
+    color: #333; /* Color del texto */
+    padding: 20px;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Estilo del contenido principal */
+main {
+    max-width: 800px; /* Aumenta el ancho máximo */
+    margin: 0 auto; /* Centra el contenido */
+}
+
+/* Estilo del contenedor del formulario */
+.form-container {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en columna */
+    background: #ffffff; /* Fondo blanco para el formulario */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    height: 100%; /* Ocupa toda la altura */
+    justify-content: space-between; /* Espacio entre contenido y el botón */
+}
+
+/* Estilo para el formulario de registro */
+.registro-form {
+    display: flex; /* Usar flexbox para el formulario */
+    flex-direction: row; /* Organiza en fila */
+    gap: 20px; /* Espacio entre columnas */
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+/* Estilo del contenedor de datos */
+.datos-container {
+    flex: 1; /* Toma el espacio restante */
+}
+
+/* Estilo del contenedor de seminarios */
+.seminarios-container {
+    flex: 1; /* Ancho fijo para la columna de seminarios */
+    margin-top: -55px; /* Ajusta este valor para subir los seminarios */
+}
+
+/* Estilo de los campos del formulario */
+label {
+    display: block; /* Asegura que las etiquetas ocupen toda la línea */
+    margin: 10px 0 5px; /* Margen superior e inferior */
+}
+
+input[type="date"],
+input[type="text"],
+input[type="radio"],
+input[type="checkbox"],
+button {
+    width: 100%; /* Campos ocupan todo el ancho */
+    padding: 10px;
+    border: 1px solid #1e3a8a; /* Borde azul oscuro */
+    border-radius: 4px;
+}
+
+button, .btn-link {
+    background: linear-gradient(90deg, #1e3a8a, #00bcd4); /* Degradado azul a turquesa */
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave */
+    margin-top: 20px; /* Agregar margen superior para separar del resto del contenido */
+}
+
+/* Efecto hover para el botón */
+button:hover {
+    background: linear-gradient(90deg, #00bcd4, #1e3a8a); /* Cambio de degradado al pasar el mouse */
+}
+
+/* Agrupando seminarios a un lado */
+.seminarios {
+    display: flex;
+    flex-direction: column; /* Coloca elementos en columna */
+    margin-top: 10px; /* Espacio superior para el recuadro */
+}
+
+/* Estilo del contenedor de turnos */
+.turnos-container {
+    display: flex; /* Usa flexbox para alinear en fila */
+    gap: 20px; /* Espacio entre los turnos */
+    margin: 10px 0; /* Margen superior e inferior */
+}
+
+.seminario-item {
+    display: flex; /* Usa flexbox para alinear */
+    align-items: center; /* Centra verticalmente */
+    margin-bottom: 8px; /* Espacio entre cada seminario */
+}
+
+/* Estilo del botón */
+button {
+    align-self: center; /* Centra el botón horizontalmente */
+    margin-top: 20px; /* Agregar margen superior para separar del resto del contenido */
+    width: auto; /* Ajustar el ancho del botón para que no ocupe todo el ancho del formulario */
+}
+
+/* Centra el botón en la parte inferior */
+.button-container {
+    display: flex;
+    justify-content: center; /* Centra el botón horizontalmente */
+    margin-top: auto; /* Empuja el botón hacia abajo */
+    padding-top: 20px; /* Añade algo de espacio antes del botón */
+}
+
+/* Estilos de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Eliminar bordes dobles */
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #1e3a8a; /* Borde azul oscuro */
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #1e3a8a; /* Fondo azul oscuro */
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+/* Estilos para las filas alternas */
+tbody tr:nth-child(even) {
+    background-color: #e9f5ff; /* Fondo celeste para las filas pares */
+}
+
+/* Links de acciones */
+a {
+    text-decoration: none;
+    padding: 8px 12px;
+    background-color: #1e3a8a; /* Fondo azul oscuro */
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+a:hover {
+    background-color: #00bcd4; /* Fondo turquesa al pasar el mouse */
+}
+
+/* Botón de nuevo registro */
+main a[href*="registro_seminario"] {
+    display: inline-block;
+    margin: 20px 0;
+    background-color: #00bcd4; /* Fondo turquesa */
+    text-align: center;
+    padding: 10px 15px;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+main a[href*="registro_seminario"]:hover {
+    background-color: #1e3a8a; /* Fondo azul oscuro al pasar el mouse */
+}
+
+
+/* Estilos para el contenedor de botones de acciones */
+.action-buttons {
+    display: flex;
+    gap: 10px; /* Espacio entre los botones */
+    justify-content: center; /* Centra los botones */
+}
+
+.action-buttons a {
+    display: inline-block;
+    background: linear-gradient(90deg, #1e3a8a, #00bcd4); /* Degradado azul a turquesa */
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+/* Efecto hover para los botones */
+.action-buttons a:hover {
+    background: linear-gradient(90deg, #00bcd4, #1e3a8a); /* Cambia el degradado al pasar el mouse */
+}
+
+
+
+
+
+/* Recuadro de edición */
+.edit-box {
+    background: white;
+    border: 2px solid #1e3a8a; /* Borde azul oscuro */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    margin-top: 20px;
+}
+
+input[type="date"],
+input[type="text"],
+input[type="radio"],
+input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto; /* Para evitar que los radios y checkboxes se extiendan */
+    margin-right: 5px; /* Espacio entre el input y la etiqueta */
+}
+
+/* Espaciado entre los radios, checkboxes y sus etiquetas */
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    margin-left: 5px;
+}
+
+input[type="radio"] {
+    margin-bottom: 10px; /* Espacio entre cada opción */
+}
+
+/* Alinea los botones uno al lado del otro */
+.button-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center; /* Centra los botones horizontalmente */
+    margin-top: 20px;
+}
+
